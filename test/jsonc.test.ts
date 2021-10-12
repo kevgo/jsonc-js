@@ -36,5 +36,6 @@ test("loadSync", function() {
   fs.writeFileSync("foo.jsonc", give)
   const want = { "a": 1 }
   const have = jsonc.loadSync("foo.jsonc")
+  fs.unlinkSync("foo.jsonc")
   assert.deepEqual(have, want)
 })
