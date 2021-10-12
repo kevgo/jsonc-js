@@ -1,6 +1,6 @@
 {
   "name": "jsonc-reader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple reader for JSONC",
   "main": "dist/jsonc.js",
   "repository": "git@github.com:kevgo/jsonc-js.git",
