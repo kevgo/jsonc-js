@@ -1,6 +1,6 @@
 import assert from "assert"
-import * as jsonc from  "../src/jsonc"
 import * as fs from "fs"
+import * as jsonc from "../src/jsonc"
 
 describe("stripComments", function() {
   it("provides a valid JSON string", function() {

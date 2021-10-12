@@ -1,15 +1,17 @@
 {
   "incremental": true,
+  "indentWidth": 2,
   "typescript": {
+    "semiColons": "asi"
   },
   "json": {
   },
   "markdown": {
+    "textWrap": "always"
   },
-  "includes": ["**/*.{ts,tsx,js,jsx,cjs,mjs,json,md}"],
+  "includes": ["**/*.{ts,js,json,md}"],
   "excludes": [
-    "**/node_modules",
-    "**/*-lock.json"
+    "**/node_modules"
   ],
   "plugins": [
     "https://plugins.dprint.dev/typescript-0.57.2.wasm",
