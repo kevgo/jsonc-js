@@ -19,7 +19,6 @@ lint:  # lints all files in this codebase
 	${CURDIR}/node_modules/.bin/eslint . --ext .ts & \
 	dprint check & \
 	wait
-#${CURDIR}/node_modules/.bin/depcheck --config=../.depcheckrc
 
 publish: clean build  # publishes this package
 	npm publish
@@ -28,7 +27,7 @@ setup:  # prepares this codebase for work after cloning
 	yarn
 
 unit:  # runs the unit tests
-	${CURDIR}/node_modules/.bin/mocha --reporter dot "test/*.test.ts"
+	${CURDIR}/node_modules/.bin/mocha "test/*.test.ts"
 
 
 .DEFAULT_GOAL := help
