@@ -26,6 +26,13 @@ publish: clean build  # publishes this package
 setup:  # prepares this codebase for work after cloning
 	yarn
 
+test: # runs all tests
+	${CURDIR}/node_modules/.bin/eslint . --ext .ts & \
+	${CURDIR}/node_modules/.bin/mocha --reporter=dot "test/*.test.ts" & \
+	dprint check & \
+	wait
+.PHONY: test
+
 unit:  # runs the unit tests
 	${CURDIR}/node_modules/.bin/mocha "test/*.test.ts"
 
