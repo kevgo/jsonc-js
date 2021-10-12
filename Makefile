@@ -4,10 +4,6 @@ build:  # builds for the current platform
 clean:  # Removes all build artifacts
 	rm -rf dist
 
-doc: build  # runs the documentation tests
-	${CURDIR}/node_modules/.bin/text-run static --format=summary
-	${CURDIR}/node_modules/.bin/text-run dynamic --format=progress
-
 fix:  # runs the auto-fixers
 	${CURDIR}/node_modules/.bin/eslint . --fix --ext .ts
 	dprint fmt
