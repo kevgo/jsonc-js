@@ -2,10 +2,11 @@
   "name": "jsonc-reader",
   "version": "0.0.1",
   "description": "A simple reader for JSONC",
-  "main": "index.js",
+  "main": "dist/jsonc.js",
   "repository": "git@github.com:kevgo/jsonc-js.git",
   "author": "Kevin Goslar <kevin.goslar@gmail.com>",
   "license": "ISC",
+  "files": ["dist"],
   "devDependencies": {
     "@types/mocha": "9.0.0",
     "@types/node": "16.10.3",

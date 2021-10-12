@@ -32,6 +32,9 @@ test: # runs all tests
 unit:  # runs the unit tests
 	${CURDIR}/node_modules/.bin/mocha "test/*.test.ts"
 
+update:  # updates to the latest dependencies
+	yarn upgrade --latest
+
 
 .DEFAULT_GOAL := help
 .SILENT:
