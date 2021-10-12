@@ -6,11 +6,12 @@ test("stripComments", function() {
   const give = `
 // comment 1
 {
-  "a": 1 // comment 2
+  "a": 1, // comment 2
+  "url": "https://acme.com",  // contains // inside a string
 }`
-  const want = `
-{
-  "a": 1
+  const want = `{
+  "a": 1,
+  "url": "https://acme.com",
 }`
   const have = jsonc.stripComments(give)
   assert.equal(have, want)
