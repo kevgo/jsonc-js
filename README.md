@@ -1,3 +1,3 @@
-# jsonc-js
+# JSONC reader for JavaScript
 
-A simple reader for JSONC text and files
+![test status](https://github.com/kevgo/jsonc-js/actions/workflows/tests.yml/badge.svg)
