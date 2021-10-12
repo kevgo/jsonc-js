@@ -11,7 +11,8 @@
   },
   "includes": ["**/*.{ts,js,json,md}"],
   "excludes": [
-    "**/node_modules"
+    "**/node_modules",
+    "dist"
   ],
   "plugins": [
     "https://plugins.dprint.dev/typescript-0.57.2.wasm",
