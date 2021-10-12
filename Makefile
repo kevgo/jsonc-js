@@ -23,6 +23,9 @@ lint:  # lints all files in this codebase
 publish: clean build  # publishes this package
 	npm publish
 
+setup:  # prepares this codebase for work after cloning
+	yarn
+
 unit:  # runs the unit tests
 	${CURDIR}/node_modules/.bin/mocha --reporter dot "test/*.test.ts"
 
