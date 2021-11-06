@@ -14,6 +14,7 @@ help:  # prints all make targets
 lint:  # lints all files in this codebase
 	${CURDIR}/node_modules/.bin/eslint . --ext .ts & \
 	dprint check & \
+	git diff --check \
 	wait
 
 publish: clean build  # publishes this package
