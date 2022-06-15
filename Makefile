@@ -9,7 +9,7 @@ fix:  # runs the auto-fixers
 	dprint fmt
 
 help:  # prints all make targets
-	cat Makefile | grep '^[^ ]*:' | grep -v '.PHONY' | grep -v help | sed 's/:.*#/#/' | column -s "#" -t
+	cat Makefile | grep '^[^ ]*:' | grep -v '.PHONY' | grep -v '.SILENT:' | grep -v help | sed 's/:.*#/#/' | column -s "#" -t
 
 lint:  # lints all files in this codebase
 	${CURDIR}/node_modules/.bin/eslint . --ext .ts & \
