@@ -12,10 +12,9 @@ help:  # prints all make targets
 	cat Makefile | grep '^[^ ]*:' | grep -v '.PHONY' | grep -v '.SILENT:' | grep -v help | sed 's/:.*#/#/' | column -s "#" -t
 
 lint:  # lints all files in this codebase
-	${CURDIR}/node_modules/.bin/eslint . --ext .ts & \
-	dprint check & \
-	git diff --check \
-	wait
+	${CURDIR}/node_modules/.bin/eslint . --ext .ts
+	dprint check &
+	git diff --check
 
 publish: clean build  # publishes this package
 	npm publish
@@ -23,11 +22,7 @@ publish: clean build  # publishes this package
 setup:  # prepares this codebase for work after cloning
 	yarn
 
-test: # runs all tests
-	${CURDIR}/node_modules/.bin/eslint . --ext .ts & \
-	${CURDIR}/node_modules/.bin/mocha --reporter=dot "test/*.test.ts" & \
-	dprint check & \
-	wait
+test: lint unit # runs all tests
 .PHONY: test
 
 unit:  # runs the unit tests
