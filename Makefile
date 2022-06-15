@@ -6,6 +6,7 @@ clean:  # Removes all build artifacts
 
 fix:  # runs the auto-fixers
 	${CURDIR}/node_modules/.bin/eslint . --fix --ext .ts
+	${CURDIR}/node_modules/.bin/sort-package-json
 	dprint fmt
 
 help:  # prints all make targets
@@ -13,6 +14,7 @@ help:  # prints all make targets
 
 lint:  # lints all files in this codebase
 	${CURDIR}/node_modules/.bin/eslint . --ext .ts
+	${CURDIR}/node_modules/.bin/sort-package-json --check
 	dprint check &
 	git diff --check
 
