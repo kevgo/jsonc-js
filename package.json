@@ -16,7 +16,7 @@
     "lint": "eslint . --ext .ts && sort-package-json --check && prettier --list-different . && git diff --check",
     "setup": "yarn",
     "test": "npm run lint && npm run unit",
-    "unit": "mocha 'test/*.test.ts'",
+    "unit": "node --test --import tsx test/*.test.ts",
     "update": "yarn upgrade --latest"
   },
   "prettier": {
