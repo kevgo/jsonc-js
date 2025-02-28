@@ -1,6 +1,6 @@
-# JSONC reader for JavaScript
+# JSONC reader for TypeScript
 
-![test status](https://github.com/kevgo/jsonc-js/actions/workflows/tests.yml/badge.svg)
+![test status](https://github.com/kevgo/jsonc-reader-ts/actions/workflows/tests.yml/badge.svg)
 
 This zero-dependency library allows reading JSON that contain comments (JSONC).
 It does that stripping comments and then loading the data as normal JSON.
