@@ -26,13 +26,7 @@ export default [
     rules: {
       ...tslintPlugin.configs.recommended.rules,
       "no-empty-function": "error",
-      "prefer-const": [
-        "error",
-        {
-          destructuring: "any",
-          ignoreReadBeforeAssign: false,
-        },
-      ],
+      "prefer-const": "error",
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/no-unsafe-call": "error",
     },
