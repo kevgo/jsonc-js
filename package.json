@@ -18,7 +18,7 @@
     "clean": "rm -rf dist",
     "fix": "eslint --fix && prettier --write . && sort-package-json --quiet",
     "lint": "eslint && sort-package-json --check --quiet && prettier --list-different . && git diff --check",
-    "publish": "npm install && git diff HEAD --exit-code --color && npm run build && npm deploy",
+    "prepublishOnly": "npm install && git diff HEAD --exit-code --color && npm run build",
     "setup": "npm install",
     "test": "npm run lint && npm run unit",
     "unit": "node --test --import tsx test/*.test.ts",
