@@ -9,21 +9,21 @@ It does that stripping comments and then loading the data as normal JSON.
 import * as jsonc from "jsonc-reader"
 
 // load JSONC from a file
-const config = await jsonc.load("my-config.jsonc")
+const config = await jsonc.load("../my-config.jsonc")
 
 // parse a JSONC string
-const text = `
+const jsoncText = `
 {
   // a comment
   "one": 1  // another comment
 }`
-const config = jsonc.parse(text)
+const config = jsonc.parse(jsoncText)
 // config === { one: 1 }
 
 // strip comments from a JSONC string
-const config = jsonc.strip(text)
+const config = jsonc.strip(jsoncText)
 // c === `
-{
-  "one": 1
-}`
+// {
+//   "one": 1
+// }`
 ```
