@@ -28,7 +28,7 @@ export function stripComments(text: string): string {
     result = result.trim()
     result = result + "\n"
   }
-  return result.substr(0, result.length - 1)
+  return result.substring(0, result.length - 1)
 }
 
 /// parses the given JSONC text into a JS object
