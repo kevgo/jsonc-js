@@ -1,7 +1,7 @@
 import { promises as fs } from "fs"
 
 /// converts the given JSONC text to valid JSON by stripping all comments
-export function stripComments(text: string): string {
+export function strip(text: string): string {
   let result = ""
   let in_string = false
   for (const line of text.split("\n")) {
@@ -30,7 +30,7 @@ export function stripComments(text: string): string {
 
 /// parses the given JSONC text into a JS object
 export function parse(text: string): any {
-  return JSON.parse(stripComments(text))
+  return JSON.parse(strip(text))
 }
 
 /// reads a JS object from the file with the given name

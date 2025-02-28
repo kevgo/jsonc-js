@@ -14,7 +14,7 @@ test("stripComments", () => {
   "a": 1,
   "url": "https://acme.com",
 }`
-  const have = jsonc.stripComments(give)
+  const have = jsonc.strip(give)
   assert.equal(have, want)
 })
 
