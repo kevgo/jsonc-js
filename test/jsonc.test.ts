@@ -29,7 +29,7 @@ test("parse", function () {
   assert.deepEqual(have, want)
 })
 
-test("loadSync", function () {
+test("loadSync", async function () {
   const give = `
 // comment 1
 {
@@ -37,7 +37,7 @@ test("loadSync", function () {
 }`
   fs.writeFileSync("foo.jsonc", give)
   const want = { a: 1 }
-  const have = jsonc.loadSync("foo.jsonc")
+  const have = await jsonc.load("foo.jsonc")
   fs.unlinkSync("foo.jsonc")
   assert.deepEqual(have, want)
 })

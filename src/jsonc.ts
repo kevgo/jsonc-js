@@ -1,4 +1,4 @@
-import fs from "fs"
+import { promises as fs } from "fs"
 
 /// converts the given JSONC text to valid JSON by stripping all comments
 export function stripComments(text: string): string {
@@ -37,6 +37,6 @@ export function parse(text: string): any {
 }
 
 /// reads a JS object from the file with the given name
-export function loadSync(filePath: string): string {
-  return parse(fs.readFileSync(filePath, "utf-8"))
+export async function load(filePath: string): Promise<string> {
+  return parse(await fs.readFile(filePath, "utf-8"))
 }
