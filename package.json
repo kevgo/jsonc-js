@@ -6,9 +6,7 @@
   "license": "ISC",
   "author": "Kevin Goslar <kevin.goslar@gmail.com>",
   "main": "dist/jsonc.js",
-  "files": [
-    "dist"
-  ],
+  "files": [ "dist" ],
   "devDependencies": {
     "@types/mocha": "9.0.0",
     "@types/node": "16.10.3",
