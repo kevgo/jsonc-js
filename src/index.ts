@@ -20,13 +20,10 @@ export function stripComments(text: string): string {
       }
       last_char = cur_char
     }
-    // the loop above doesn't add the last character of the line to the result,
-    // let's do that here
     if (last_char != null) {
       result = result + last_char
     }
-    result = result.trim()
-    result = result + "\n"
+    result = result.trim() + "\n"
   }
   return result.substring(0, result.length - 1)
 }
