@@ -19,6 +19,10 @@
     "unit": "mocha 'test/*.test.ts'",
     "update": "yarn upgrade --latest"
   },
+  "prettier": {
+    "semi": false,
+    "proseWrap": "always"
+  },
   "devDependencies": {
     "@types/mocha": "9.0.0",
     "@types/node": "16.10.3",
