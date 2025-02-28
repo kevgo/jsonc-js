@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - run: yarn run setup
-      - run: yarn run test
-      - run: yarn run fix
+      - run: npm run setup
+      - run: npm run test
+      - run: npm run fix
       - name: Indicate formatting issues
         run: git diff HEAD --exit-code --color
