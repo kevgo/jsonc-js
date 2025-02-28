@@ -1,7 +1,7 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
 import * as fs from "fs"
-import * as jsonc from "../src/jsonc"
+import * as jsonc from "../src/index"
 
 test("stripComments", () => {
   const give = `

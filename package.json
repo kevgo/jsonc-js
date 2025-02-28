@@ -9,7 +9,7 @@
   "license": "ISC",
   "author": "Kevin Goslar <kevin.goslar@gmail.com>",
   "type": "module",
-  "main": "dist/jsonc.js",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
