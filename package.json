@@ -12,8 +12,8 @@
   "scripts": {
     "build": "tsc -p .",
     "clean": "rm -rf dist",
-    "fix": "eslint . --fix --ext .ts && sort-package-json",
-    "lint": "eslint . --ext .ts && sort-package-json --check && dprint check && git diff --check",
+    "fix": "eslint . --fix --ext .ts && prettier --write && sort-package-json",
+    "lint": "eslint . --ext .ts && sort-package-json --check && prettier --check && git diff --check",
     "setup": "yarn",
     "test": "npm run lint && npm run unit",
     "unit": "mocha 'test/*.test.ts'",
@@ -26,6 +26,7 @@
     "@typescript-eslint/parser": "5.0.0",
     "eslint": "8.0.0",
     "mocha": "9.1.2",
+    "prettier": "3.5.2",
     "sort-package-json": "1.57.0",
     "ts-node": "10.3.0",
     "typescript": "4.4.3"
