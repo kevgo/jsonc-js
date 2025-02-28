@@ -3,7 +3,7 @@ import { test } from "node:test"
 import * as fs from "fs"
 import * as jsonc from "../src/jsonc"
 
-test("stripComments", function () {
+test("stripComments", () => {
   const give = `
 // comment 1
 {
@@ -18,7 +18,7 @@ test("stripComments", function () {
   assert.equal(have, want)
 })
 
-test("parse", function () {
+test("parse", () => {
   const give = `
 // comment 1
 {
@@ -29,7 +29,7 @@ test("parse", function () {
   assert.deepEqual(have, want)
 })
 
-test("loadSync", async function () {
+test("loadSync", async () => {
   const give = `
 // comment 1
 {
