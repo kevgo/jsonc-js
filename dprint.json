@@ -4,16 +4,12 @@
   "typescript": {
     "semiColons": "asi"
   },
-  "json": {
-  },
+  "json": {},
   "markdown": {
     "textWrap": "always"
   },
   "includes": ["**/*.{ts,js,json,md}"],
-  "excludes": [
-    "**/node_modules",
-    "dist"
-  ],
+  "excludes": ["**/node_modules", "dist"],
   "plugins": [
     "https://plugins.dprint.dev/typescript-0.57.2.wasm",
     "https://plugins.dprint.dev/json-0.13.0.wasm",
