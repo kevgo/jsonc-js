@@ -10,7 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p .",
+    "build": "tsc",
     "clean": "rm -rf dist",
     "fix": "eslint . --fix --ext .ts && prettier --write . && sort-package-json",
     "lint": "eslint . --ext .ts && sort-package-json --check && prettier --list-different . && git diff --check",
