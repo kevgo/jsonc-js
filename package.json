@@ -6,7 +6,17 @@
   "license": "ISC",
   "author": "Kevin Goslar <kevin.goslar@gmail.com>",
   "main": "dist/jsonc.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "clean": "rm -rf dist",
+    "fix": "eslint . --fix --ext .ts && sort-package-json",
+    "lint": "eslint . --ext .ts && sort-package-json --check && dprint check && git diff --check",
+    "test": "npm run lint && npm run unit",
+    "update": "yarn upgrade --latest"
+  },
   "devDependencies": {
     "@types/mocha": "9.0.0",
     "@types/node": "16.10.3",
@@ -17,13 +27,5 @@
     "sort-package-json": "1.57.0",
     "ts-node": "10.3.0",
     "typescript": "4.4.3"
-  },
-  "scripts": {
-    "build": "tsc -p .",
-    "clean": "rm -rf dist",
-    "fix": "eslint . --fix --ext .ts && sort-package-json",
-    "lint": "eslint . --ext .ts && sort-package-json --check && dprint check && git diff --check",
-    "test": "npm run lint && npm run unit",
-    "update": "yarn upgrade --latest"
   }
 }
