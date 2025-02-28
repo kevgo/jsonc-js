@@ -7,7 +7,7 @@ export function stripComments(text: string): string {
   for (const line of text.split("\n")) {
     let last_char = null
     for (const cur_char of line) {
-      if (last_char !== "\\" && cur_char === "\"") {
+      if (last_char !== "\\" && cur_char === '"') {
         in_string = !in_string
       }
       if (!in_string && last_char === "/" && cur_char === "/") {

@@ -6,7 +6,13 @@
   "license": "ISC",
   "author": "Kevin Goslar <kevin.goslar@gmail.com>",
   "main": "dist/jsonc.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
+  "prettier": {
+    "proseWrap": "always",
+    "semi": false
+  },
   "devDependencies": {
     "@types/mocha": "9.0.0",
     "@types/node": "16.10.3",
@@ -14,6 +20,7 @@
     "@typescript-eslint/parser": "5.0.0",
     "eslint": "8.0.0",
     "mocha": "9.1.2",
+    "prettier": "3.5.2",
     "sort-package-json": "1.57.0",
     "ts-node": "10.3.0",
     "typescript": "4.4.3"

@@ -7,7 +7,7 @@ clean:  # Removes all build artifacts
 fix:  # runs the auto-fixers
 	${CURDIR}/node_modules/.bin/eslint . --fix --ext .ts
 	${CURDIR}/node_modules/.bin/sort-package-json
-	dprint fmt
+	${CURDIR}/node_modules/.bin/prettier --write .
 
 help:  # prints all make targets
 	cat Makefile | grep '^[^ ]*:' | grep -v '.PHONY' | grep -v '.SILENT:' | grep -v help | sed 's/:.*#/#/' | column -s "#" -t
@@ -15,7 +15,7 @@ help:  # prints all make targets
 lint:  # lints all files in this codebase
 	${CURDIR}/node_modules/.bin/eslint . --ext .ts
 	${CURDIR}/node_modules/.bin/sort-package-json --check
-	dprint check &
+	${CURDIR}/node_modules/.bin/prettier --check .
 	git diff --check
 
 publish: clean build  # publishes this package
