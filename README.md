@@ -21,8 +21,8 @@ const config = jsonc.parse(jsoncText)
 // config === { one: 1 }
 
 // strip comments from a JSONC string
-const config = jsonc.strip(jsoncText)
-// c === `
+const jsonText = jsonc.strip(jsoncText)
+// jsonText === `
 // {
 //   "one": 1
 // }`
