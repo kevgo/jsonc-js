@@ -2,7 +2,10 @@
   "name": "jsonc-reader",
   "version": "0.0.3",
   "description": "A simple reader for JSONC",
-  "repository": "git@github.com:kevgo/jsonc-js.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kevgo/jsonc-js.git"
+  },
   "license": "ISC",
   "author": "Kevin Goslar <kevin.goslar@gmail.com>",
   "type": "module",
