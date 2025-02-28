@@ -7,7 +7,6 @@
   "author": "Kevin Goslar <kevin.goslar@gmail.com>",
   "type": "module",
   "main": "dist/jsonc.js",
-  "type": "module",
   "files": [
     "dist"
   ],
