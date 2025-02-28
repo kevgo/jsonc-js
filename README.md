@@ -9,7 +9,7 @@ It does that stripping comments and then loading the data as normal JSON.
 import * as jsonc from "jsonc-reader"
 
 // load JSONC from a file
-const config = await jsonc.load("my-config.jsonc")
+const config = await jsonc.load("../my-config.jsonc")
 
 // parse a JSONC string
 const jsoncText = `
