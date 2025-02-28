@@ -5,8 +5,8 @@
   "repository": "git@github.com:kevgo/jsonc-js.git",
   "license": "ISC",
   "author": "Kevin Goslar <kevin.goslar@gmail.com>",
-  "main": "dist/jsonc.js",
   "type": "module",
+  "main": "dist/jsonc.js",
   "files": [
     "dist"
   ],
