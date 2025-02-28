@@ -20,8 +20,8 @@
     "update": "yarn upgrade --latest"
   },
   "prettier": {
-    "semi": false,
-    "proseWrap": "always"
+    "proseWrap": "always",
+    "semi": false
   },
   "devDependencies": {
     "@types/mocha": "9.0.0",
