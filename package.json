@@ -16,7 +16,7 @@
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist",
-    "coverage": "node --test --import tsx --experimental-test-coverage --test-reporter=lcov test/*.test.ts | coveralls",
+    "coverage": "node --test --import tsx --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=coverage.lcov -- test/*.test.ts",
     "fix": "eslint --fix && dprint fmt && sort-package-json --quiet",
     "lint": "eslint && sort-package-json --check --quiet && dprint check && git diff --check",
     "prepublishOnly": "npm install && git diff HEAD --exit-code --color && npm run build",
