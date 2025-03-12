@@ -5,8 +5,8 @@
 [![0 dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://github.com/kevgo/node-text-stream-search/blob/main/package.json)
 [![install size](https://packagephobia.now.sh/badge?p=jsonc-reader)](https://packagephobia.now.sh/result?p=jsonc-reader)
 
-This micro-library (zero-dependencies) allows reading JSON that contain comments
-(JSONC). It does that stripping comments and then loading the data as normal
+This micro-library (no dependencies) allows reading JSON that contain comments
+(JSONC). It does that by stripping comments and then loading the data as normal
 JSON.
 
 ```ts
