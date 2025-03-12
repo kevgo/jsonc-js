@@ -3,7 +3,7 @@
 ![test status](https://github.com/kevgo/jsonc-reader-ts/actions/workflows/tests.yml/badge.svg)
 [![Code Coverage](https://coveralls.io/repos/github/kevgo/jsonc-reader-ts/badge.svg?branch=main)](https://coveralls.io/github/kevgo/jsonc-reader-ts?branch=main)
 [![0 dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://github.com/kevgo/node-text-stream-search/blob/main/package.json)
-[![install size](https://packagephobia.now.sh/badge?p=jsonc-reader-ts)](https://packagephobia.now.sh/result?p=jsonc-reader-ts)
+[![install size](https://packagephobia.now.sh/badge?p=jsonc-reader)](https://packagephobia.now.sh/result?p=jsonc-reader)
 
 This micro-library (zero-dependencies) allows reading JSON that contain comments (JSONC).
 It does that stripping comments and then loading the data as normal JSON.
