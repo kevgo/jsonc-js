@@ -22,13 +22,14 @@
     "setup": "npm install",
     "test": "npm run lint && npm run unit",
     "unit": "node --test --import tsx test/*.test.ts",
-    "update": "npx npm-check-updates -u && npm install"
+    "update": "npm-check-updates -u && npm install"
   },
   "devDependencies": {
     "@eslint/js": "9.21.0",
     "@types/node": "22.13.5",
     "dprint": "0.49.0",
     "eslint": "9.21.0",
+    "npm-check-updates": "17.1.15",
     "sort-package-json": "2.15.0",
     "tsx": "4.19.3",
     "typescript": "5.7.3",
