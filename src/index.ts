@@ -2,10 +2,10 @@ import { promises as fs } from "fs"
 
 /** converts the given JSONC text to valid JSON by stripping all comments */
 export function strip(text: string): string {
-  let result = ""
+  let result: string = ""
   let in_string = false
   for (const line of text.split("\n")) {
-    let last_char = null
+    let last_char: string | null = null
     for (const cur_char of line) {
       if (last_char !== "\\" && cur_char === '"') {
         in_string = !in_string
