@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/contest-framework/server/refs/heads/main/documentation/schema.json",
+  "actions": [
+    {
+      "type": "test-all",
+      "run": "npm run test"
+    },
+    {
+      "type": "test-file",
+      "files": "**/*.test.ts",
+      "run": "node --test --import tsx {{file}}"
+    }
+  ],
+  "options": {
+    "beforeRun": {
+      "clearScreen": false,
+      "newlines": 2
+    },
+    "afterRun": {
+      "newlines": 1,
+      "indicatorLines": 2,
+      "indicatorBackground": true,
+      "printResult": true
+    }
+  }
+}
