@@ -10,7 +10,9 @@ test("stripComments", () => {
   "a": 1, // comment 2
   "url": "https://acme.com",  // contains // inside a string
 }`
-  const want = `{
+  const want = `
+
+{
   "a": 1,
   "url": "https://acme.com",
 }`
