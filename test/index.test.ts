@@ -9,13 +9,13 @@ test("stripComments", () => {
 // comment 1
 {
   "a": 1, // comment 2
-  "url": "https://acme.com",  // contains // inside a string
+  "url": "https://acme.com", // contains // inside a string
 }`
   const want = `
 
 {
-  "a": 1,
-  "url": "https://acme.com",
+  "a": 1, \n\
+  "url": "https://acme.com", \n\
 }`
   const have = jsonc.strip(give)
   if (have !== want) {
