@@ -17,7 +17,7 @@
       "newlines": 0
     },
     "afterRun": {
-      "newlines": 0,
+      "newlines": 1,
       "indicatorLines": 3,
       "indicatorBackground": true,
       "printResult": false

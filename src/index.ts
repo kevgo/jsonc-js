@@ -23,7 +23,7 @@ export function strip(text: string): string {
     if (last_char != null) {
       result = result + last_char
     }
-    result = result + "\n"
+    result = result.trimEnd() + "\n"
   }
   return result.substring(0, result.length - 1)
 }
