@@ -28,6 +28,7 @@ const config = jsonc.parse(jsoncText)
 const jsonText = jsonc.strip(jsoncText)
 // jsonText === `
 // {
+//
 //   "one": 1
 // }`
 ```
