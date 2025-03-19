@@ -6,8 +6,8 @@
 [![install size](https://packagephobia.now.sh/badge?p=jsonc-reader)](https://packagephobia.now.sh/result?p=jsonc-reader)
 
 This micro-library (no dependencies) allows reading JSON that contain comments
-(JSONC). It does that by stripping comments and then loading the data as normal
-JSON.
+(JSONC). It does that by overwriting comments with whitespace (so that line and
+column numbers remain the same) and then loading the data as normal JSON.
 
 ```ts
 import * as jsonc from "jsonc-reader"
